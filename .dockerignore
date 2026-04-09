@@ -1,0 +1,8 @@
+backend/node_modules
+backend/dist
+backend/.yarn/cache
+frontend/node_modules
+frontend/.svelte-kit
+frontend/build
+node_modules
+*.md

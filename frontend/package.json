@@ -1,0 +1,23 @@
+{
+  "name": "@dating-app/frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "compile": "npx svelte-check --tsconfig ./tsconfig.json",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "5.2.12",
+    "@sveltejs/kit": "2.21.1",
+    "@sveltejs/vite-plugin-svelte": "5.0.3",
+    "svelte": "5.28.2",
+    "typescript": "5.8.3",
+    "vite": "6.3.2"
+  },
+  "dependencies": {
+    "lucide-svelte": "^0.468.0",
+    "uuid": "10.0.0"
+  }
+}

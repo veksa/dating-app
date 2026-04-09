@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "es2017",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "preserveConstEnums": true,
+    "emitDecoratorMetadata": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "_types"
+    ],
+    "types": ["jest"],
+    "lib": [
+      "dom",
+      "es2019"
+    ],
+    "skipLibCheck": true,
+    "paths": {
+      "@dating-app/protocol": ["../__protocol/dist/index"],
+      "@dating-app/protocol/*": ["../__protocol/dist/*"]
+    }
+  },
+  "buildOnSave": false,
+  "compileOnSave": false,
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__tests__/**",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "ESNext"
+    }
+  }
+}

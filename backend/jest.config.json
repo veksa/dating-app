@@ -1,0 +1,48 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "testRegex": "\\.test\\.ts$",
+  "setupFilesAfterEnv": ["<rootDir>/jest.setup.ts"],
+  "transform": {
+    "^.+\\.ts?$": [
+      "ts-jest",
+      {
+        "isolatedModules": true,
+        "tsconfig": {
+          "moduleResolution": "node",
+          "module": "commonjs",
+          "ignoreDeprecations": "6.0"
+        }
+      }
+    ]
+  },
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.ts",
+    "!src/**/*.test.ts",
+    "!src/**/*.interface.ts",
+    "!src/main.ts",
+    "!src/app.module.ts",
+    "!src/app.controller.ts",
+    "!src/app.gateway.ts",
+    "!src/_helpers/**",
+    "!src/_guards/**",
+    "!src/__webpack/**"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 50,
+      "functions": 50,
+      "lines": 50,
+      "statements": 50
+    }
+  },
+  "coverageReporters": [
+    "text",
+    "text-summary",
+    "lcov"
+  ]
+}
